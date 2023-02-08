@@ -1,4 +1,7 @@
-export const fetchResponse =  async(chat) => {
+
+
+export const fetchResponse =  async(chat) => { 
+
     try {
         // after depoloyment you should change the fetch URL below
         const response = await fetch('https://botsever.vercel.app/', { 
@@ -11,7 +14,7 @@ export const fetchResponse =  async(chat) => {
             })
         })
 
-        const data = await response.json()
+        const data = await response.status()
         return data
     } catch (error) {
         console.log(error);
