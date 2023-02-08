@@ -12,7 +12,8 @@ function App() {
   const mutation = useMutation({
     mutationFn: () => {
       return fetchResponse(chat);
-    },
+    }, 
+    
     onSuccess: (data) =>
       setChat((prev) => [
         ...prev,

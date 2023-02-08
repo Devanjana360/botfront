@@ -11,6 +11,8 @@ const ChatInput = ({ sendMessage, loading }) => {
     sendMessage({ sender: "user", message: value });
     setValue("");
   };
+  
+
   return (
     <div
       className="w-full bg-white bg-opacity-10 max-h-40 rounded-lg px-4
