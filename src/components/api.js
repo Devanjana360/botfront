@@ -14,7 +14,7 @@ export const fetchResponse =  async(chat) => {
             })
         })
 
-        const data = await response.status()
+        const data = await response.json()
         return data
     } catch (error) {
         console.log(error);
